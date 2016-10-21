@@ -24,7 +24,6 @@ totalcounter = 0
 counter4 = 0
 counter3 = 0
 File.open("/users/nick22tamu/Desktop/rubylab/http_access_log", "r").each_line do |line|
-  arrayline = line.split(" ")
   if line.ruby_safeguard
     next
   end
