@@ -35,7 +35,7 @@ File.open("/users/nick22tamu/Desktop/rubylab/http_access_log", "r").each_line do
   elsif time = line[/ 3\d\d/]
     counter3 += 1
     totalcounter += 1
-  elsif time = line[/ 2\d\d/]
+  else
     totalcounter += 1
   end
 
@@ -62,3 +62,4 @@ puts "The least requested file is #{min_file[0]} with #{min_file[1]} request"
 puts "This is the error percent: #{error_pct} %"
 puts "This is the redirect percent: #{redirect_pct} %"
 puts "The total amount of requests is: #{logs.readlines.size}"
+puts "The total amount of requests is: #{totalcounter}"
