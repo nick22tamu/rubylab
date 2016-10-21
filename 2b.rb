@@ -1,4 +1,4 @@
-time = line[/\[.+]/
+time = line[/\[.+]/]
 
   date = time[1,11]
 day[date] += 1
